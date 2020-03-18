@@ -1,11 +1,19 @@
 import React  from 'react';
+import { UserContext } from '../Contexts/UserContext';
 
-const LogIn= ({requestLogout})=> {
+const LogIn= ()=> {
+    
     return (
-        <div>
-                <button onClick={requestLogout}>Log Out</button>
+        <UserContext.Consumer>{(context)=>{
+            return(
+                <div>
+                    <button onClick={context.requestLogout}>Log Out</button>
 
-        </div>
+                </div> 
+            )
+        }}
+        
+        </UserContext.Consumer>
     )
 }
 export default  LogIn;
