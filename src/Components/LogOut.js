@@ -7,7 +7,7 @@ const LogIn= ()=> {
         <UserContext.Consumer>{(context)=>{
             return(
                 <div>
-                    <button onClick={context.requestLogout}>Log Out</button>
+                    <span onClick={context.requestLogout}>Log Out</span>
 
                 </div> 
             )

@@ -1,6 +1,7 @@
 import React,{ createContext,Component } from "react";
 import firebase from 'firebase/app'
 import 'firebase/auth'
+import { Redirect } from "react-router";
 
 export const defaultuser={loggedIn:false,email:"demo"};
 
@@ -8,7 +9,7 @@ export const UserContext= createContext();
 
 
 export default class UserContextProvider extends Component {
-    defaultuser={loggedIn:false,email:"demo"};
+    defaultuser={loggedIn:false,email:"demo",name:"Test User",uid:0};
     state=defaultuser;
 
     componentDidMount(state){
@@ -43,7 +44,9 @@ export default class UserContextProvider extends Component {
                     email:user.email,
                     username:user.uid,
                     name:user.displayName,
-            })}
+            })
+            
+            }
         })
         
     }

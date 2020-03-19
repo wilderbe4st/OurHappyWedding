@@ -4,9 +4,12 @@ import UserContextProvider, {UserContext} from '../Contexts/UserContext'
 
 import firebase from 'firebase/app'
 import 'firebase/auth'
+
 import LogIn from './LogIn'
 import LogOut from './LogOut'
-
+import NavbarTop from './Navbar/Navbar'
+//css
+import './styles.css'
 
 const Home =()=> {
     // firebase.initializeApp(firebaseConfig);
@@ -14,15 +17,15 @@ const Home =()=> {
     const user = useContext(UserContext);
     
     return (
-        
+            
              <div>
+             <NavbarTop/>
                 <h2>Home</h2>
                 {!user.loggedIn? (
                     <LogIn />
                  ):( 
                     <LogOut />
-                ) 
-                } 
+                ) } 
              </div>
        
         

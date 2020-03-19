@@ -6,6 +6,7 @@ import Wedding from './Components/Wedding/Wedding';
 import UserContextProvider,{UserContext} from './Contexts/UserContext'
 import firebase from 'firebase/app'
 import FirebaseConfig from './FirebaseConfig'
+import LogIn from './Components/LogIn';
 
 function App() {
   //initialise firebase
@@ -14,15 +15,17 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hope it works </h1>
       <UserContextProvider>
       <BrowserRouter>
         <Route exact path="/" ><Home /> </Route>
         <Route exact path="/signup" component={SignUp}/>
         <Route exact path="/demo" component={Wedding}/>
+        <Route exact path="/login" component={LogIn}/>
       </BrowserRouter>
       </UserContextProvider>
+
       
+
     </div>
   );
 }

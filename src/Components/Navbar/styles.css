@@ -1,0 +1,9 @@
+.navbar-fixed {
+    position: fixed;
+    z-index:999999999;
+}
+
+.setp{
+    padding:15px;
+    cursor: pointer;
+}
