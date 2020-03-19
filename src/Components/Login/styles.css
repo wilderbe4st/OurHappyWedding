@@ -1,0 +1,38 @@
+.loginBox{
+    height:400px    ;
+    width: 380px;
+    /* background-color: blue; */
+    margin:20% auto;
+    padding: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    z-index: 999;
+    
+}
+
+.background{
+    content: url('../../resources/images/flowerDrawing.png');
+    /* background-color: tomato; */
+    position: absolute;
+    height: 650px;
+    width: auto;
+    margin: -5vh 20vw;
+    top: 110px;
+    z-index: -1;
+
+
+}
+.loginTitle{
+    position: relative;
+    top:-20px;
+    color: #c28617;
+}
+
+#loginButton{
+    margin:20px 5px;
+    border-style: solid;
+    
+    border-width: 2px;
+    border-color: tan;
+    border-radius: 2px;
+}

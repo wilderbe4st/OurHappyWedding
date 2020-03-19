@@ -6,7 +6,7 @@ import Wedding from './Components/Wedding/Wedding';
 import UserContextProvider,{UserContext} from './Contexts/UserContext'
 import firebase from 'firebase/app'
 import FirebaseConfig from './FirebaseConfig'
-import LogIn from './Components/LogIn';
+import LogIn from './Components/Login/LogIn';
 
 function App() {
   //initialise firebase

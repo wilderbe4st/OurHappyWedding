@@ -5,7 +5,7 @@ import UserContextProvider, {UserContext} from '../Contexts/UserContext'
 import firebase from 'firebase/app'
 import 'firebase/auth'
 
-import LogIn from './LogIn'
+import LogIn from './Login/LogIn'
 import LogOut from './LogOut'
 import NavbarTop from './Navbar/Navbar'
 //css
