@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Home from './Components/Home';
+import Home from './Components/HomePage/Home';
 import SignUp from './Components/SignUp'
 import Wedding from './Components/Wedding/Wedding';
 import UserContextProvider,{UserContext} from './Contexts/UserContext'
