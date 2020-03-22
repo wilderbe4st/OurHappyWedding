@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <UserContextProvider>
       <BrowserRouter>
-        <Route exact path="/" ><Home /> </Route>
+        <Route exact path="/"><Home/></Route>
         <Route exact path="/signup" component={SignUp}/>
         <Route exact path="/demo" component={Wedding}/>
         <Route exact path="/login" component={LogIn}/>
