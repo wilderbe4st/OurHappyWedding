@@ -21,7 +21,7 @@ const Home =()=> {
             
              <div>
              <NavbarTop/>
-             <Carousel/> 
+             {/* <Carousel/>  */}
              </div>
        
         
