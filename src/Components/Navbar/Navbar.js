@@ -9,10 +9,10 @@ import { Link } from 'react-router-dom'
 export default function Navbar() {
     const user=useContext(UserContext);
     return (
-        <div className="navbar-fixed">
+        <div className="navbar-fixed" style={{background:'coral'}}>
         <div className="">
-            <nav className=" z-depth-0 transparent ">
-                <div className="nav-wrapper  " id="navbar">
+            <nav className=" z-depth-0 transparent">
+                <div className="nav-wrapper" id="navbar">
                 <a href="#!" className="brand-logo ">Our Happy Wedding</a>
                 <ul className="right hide-on-med-and-down">
                     <li> <Link to="/about">About Us</Link> </li>

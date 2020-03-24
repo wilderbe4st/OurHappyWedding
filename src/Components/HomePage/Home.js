@@ -10,7 +10,7 @@ import LogOut from '../LogOut'
 import NavbarTop from '../Navbar/Navbar'
 //css
 import './styles.css'
-import Carousel from './Carousel'
+import Carousel from './Carousel2'
 
 const Home =()=> {
     // firebase.initializeApp(firebaseConfig);
@@ -21,7 +21,7 @@ const Home =()=> {
             
              <div>
              <NavbarTop/>
-              <Carousel/> 
+             <Carousel/> 
              </div>
        
         
