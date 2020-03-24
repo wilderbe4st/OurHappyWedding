@@ -4,7 +4,8 @@
 } */
 
 .carousel1{
-    width: 100px;
+    /* width: 100px; */
+    height: 500px;
     background-color: tomato;
     /* content: url('../../resources/images/1.png'); */
 }
@@ -16,6 +17,7 @@
 
 #caoruselelem{
     height: 600px;
+    position: absolute;
 }
 
 .carouselButton{

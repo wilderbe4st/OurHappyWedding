@@ -18,7 +18,7 @@ export default function Carousel() {
         <div className="carouselTop">
             <div className="carousel carousel-slider center"id="caoruselelem">
                 <div className="carousel-fixed-item center">
-                <a className="btn waves-effect white grey-text darken-text-2 carouselButton">See Demo</a>
+                <a className="btn waves-effect white grey-text darken-text-2 carouselButton" >See Demo</a>
                 </div>
                     {/* first */}
                     <div className="carousel-item red white-text carousel1" href="#one!">
