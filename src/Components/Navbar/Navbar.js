@@ -18,10 +18,16 @@ export default function Navbar() {
         <div className="nav-bar " >
             <div className="nav-logo">Our Happy Wedding</div>
            <ul className="nav-links">
-               <l1 className="nav-link"><a href="#">Home</a> </l1>
-               <l1 className="nav-link"><a href="#">About</a> </l1>
-               <l1 className="nav-link"><a href="#">Contact</a> </l1>
-               <li className="nav-link"><Link to="/login">Log In</Link></li>
+               <l1 className="nav-link"><Link href="#">Home</Link> </l1>
+               <l1 className="nav-link"><Link href="#">About</Link> </l1>
+               <l1 className="nav-link"><Link href="#">Contact</Link> </l1>
+               {!user.loggedIn? (
+                <li className="nav-link" ><Link to="/login">Log In</Link></li>
+                ):(
+                <li onClick={user.requestLogout} className="nav-link"><Link to="/#">Log Out</Link></li>
+                    
+                    
+                 ) } 
            </ul>
            <div className="nav-icon" onClick={navIcon}><img src={require('../../resources/icons/nav.png')}alt="-"/> </div>
             
