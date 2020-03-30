@@ -14,7 +14,7 @@ import ManageUsers from './Components/Admin/ManageUsers';
 
 function App() {
   //initialise firebase
-  firebase.initializeApp(FirebaseConfig);
+  // firebase.initializeApp(FirebaseConfig);
 
 
   return (
