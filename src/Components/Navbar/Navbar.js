@@ -2,8 +2,7 @@ import React, { useContext } from 'react'
 import './styles.css'
 
 
-import LogIn from '../Login/LogIn'
-import LogOut from '../LogOut'
+
 import {UserContext} from '../../Contexts/UserContext'
 import { Link } from 'react-router-dom'
 

@@ -73,6 +73,7 @@ nav {
         display: block;
     }
     .nav-links.open{
+        z-index: 999;
         display: inline;
         flex-direction: column;
         display: flex;

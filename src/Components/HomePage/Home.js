@@ -20,8 +20,8 @@ const Home =()=> {
     return (
             
              <div>
-             <NavbarTop/>
-             {/* <Carousel/>  */}
+             <NavbarTop style="z-index:999;"/>
+             <Carousel/> 
              </div>
        
         
