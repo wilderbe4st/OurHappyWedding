@@ -3,8 +3,10 @@ import Sidebar from './Sidebar'
 import firebase from '../../FirebaseConfig'
 
 export default function ManageUsers() {
-    
-    const [users,setUsers]=  useState([]);
+    const initState={
+        userList:[],
+    }  
+    const [users,setUsers]=  useState(initState);
     
     var userList =[];
 
@@ -25,7 +27,9 @@ export default function ManageUsers() {
                     // console.log(userList);
                 });
         })
-        setUsers(userList);
+        setUsers({
+            ...users,
+            userList:userList});
         console.log(users);
     },[])
     
@@ -40,16 +44,20 @@ export default function ManageUsers() {
             <div className="main">
             <div className="container">
 
-                <h1>ManageUser</h1>
-                {users.forEach((user)=>{
-                console.log(user)
-                    return(
-                        <div>
-                        <p>Usrs</p>
-                        <p>{user.bride} </p>
-                        </div>
-                    )
-                })}
+                <h1>Registered Users</h1>
+                {users.userList.map((user)=>(
+                    <div>
+                    <ul>
+                        <li>email: {user.email}</li>
+                        <li>Groom: {user.groom}</li>
+                        <li>Bride: {user.bride}</li>
+                        <li>number: {user.number}</li>
+                        <li>link: {user.link}</li>
+                    </ul>
+                    <br/>
+                    </div>
+
+                ))}
             </div>
             </div>
             
