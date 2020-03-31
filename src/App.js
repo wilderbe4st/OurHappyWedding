@@ -11,6 +11,7 @@ import Dashboard from './Components/Admin/Dashboard';
 import AddUser from './Components/Admin/AddUser';
 import './styles.css'
 import ManageUsers from './Components/Admin/ManageUsers';
+import Home1 from './Components/HomePage/Home1'
 
 function App() {
   //initialise firebase
@@ -21,7 +22,7 @@ function App() {
     <div className="App">
       <UserContextProvider>
       <BrowserRouter>
-        <Route exact path="/"><Home/></Route>
+        <Route exact path="/"><Home1/></Route>
         <Route exact path="/signup" component={SignUp}/>
         <Route exact path="/demo" component={Wedding}/>
         <Route exact path="/login" component={LogIn}/>

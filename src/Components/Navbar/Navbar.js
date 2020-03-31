@@ -1,8 +1,5 @@
 import React, { useContext } from 'react'
 import './styles.css'
-
-
-
 import {UserContext} from '../../Contexts/UserContext'
 import { Link } from 'react-router-dom'
 
@@ -14,16 +11,16 @@ export default function Navbar() {
     }
     const user=useContext(UserContext);
     return (
-        <div className="nav-bar " >
-            <div className="nav-logo">Our Happy Wedding</div>
+        <div className="nav-bar">
            <ul className="nav-links">
-               <l1 className="nav-link"><Link href="#">Home</Link> </l1>
-               <l1 className="nav-link"><Link href="#">About</Link> </l1>
-               <l1 className="nav-link"><Link href="#">Contact</Link> </l1>
+               <l1 className="nav-link"><Link href="#">HOME</Link> </l1>
+               <l1 className="nav-link"><Link href="#">DEMO</Link> </l1>
+               <l1 className="nav-link"><Link href="#">BUY</Link> </l1>
+               <l1 className="nav-link"><Link href="#">CONTACT</Link> </l1>
                {!user.loggedIn? (
-                <li className="nav-link" ><Link to="/login">Log In</Link></li>
+                <li className="nav-link" style={{width:'unset'}}><Link to="/login">LOG IN</Link></li>
                 ):(
-                <li onClick={user.requestLogout} className="nav-link"><Link to="/#">Log Out</Link></li>
+                <li onClick={user.requestLogout} className="nav-link"><Link to="/#">LOG OUT</Link></li>
                     
                     
                  ) } 

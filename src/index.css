@@ -6,7 +6,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+@font-face {
+  font-family: 'SpringBeauty';
+  src: local('SpringBeauty'), url(./resources/fonts/Spring\ Beautydemo\ 2.ttf) format('woff');
+}
+@font-face {
+font-family: 'Muli';
+src: local('Muli'), url(./resources/fonts/Muli/Muli-Italic-VariableFont_wght.ttf) format('woff');
+}
+@font-face {
+  font-family: 'Cormorant';
+  src: local('Cormorant'), url(./resources/fonts/Cormorant/Cormorant-Regular.ttf) format('woff');
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
