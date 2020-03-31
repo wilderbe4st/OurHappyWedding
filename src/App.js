@@ -15,7 +15,7 @@ import Home1 from './Components/HomePage/Home1'
 
 function App() {
   //initialise firebase
-  firebase.initializeApp(FirebaseConfig);
+  // firebase.initializeApp(FirebaseConfig);
 
 
   return (
