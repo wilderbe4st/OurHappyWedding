@@ -27,8 +27,8 @@
     display: flex;
     justify-content: center;
     font-family: SpringBeauty;
-    padding-bottom: 3%;
     padding-top: 1%;
+    padding-bottom: 2%;
     font-size: 60px;
 }
 .header-wrapper{
@@ -38,10 +38,13 @@
     justify-content: center;
     border-bottom-style: groove;
     border-bottom-color:#9b6510;
+    border-width: 0.5px;
 }
 .nav-link{
     border-right-style: outset;
     border-right-color: black;
+    border-width: 1.5px;
+    /* padding: 0px 10px; */
 }
 .nav-links {
     padding-bottom: 4%;
@@ -53,6 +56,7 @@
     align-items: center;
 }
 .sec-1{
+    text-align: center;
     color:#9b6510;
     height:80%;
     width:80%;
@@ -76,12 +80,10 @@
     align-self: center;  
 }
 .icon-img{
-    width: 70px;
-    border-radius: 37px;
-    border-style: solid;
-    padding: 10px;
-    background: wheat;
-    border-color: wheat;
+    width: 100px;
+    border-radius: 50%;
+    padding: 20px;
+    background: white;
 }
 #caoruselelem{
     height: 600px;
@@ -93,10 +95,18 @@
     margin-right: 15%;
     display: flex;
     justify-content: flex-end;
-    margin-top: 13%;
+    margin-top: 60px;
+    /* background-color: blue; */
+}
+#homebutton{
+    margin: 20px;
+    border: solid 1px #c27e11;
+    border-radius: 2px;
+    color: #c27e11;
 }
 .demo-btn{
     padding-top: 4px;
+    justify-content: center;
     text-align: -webkit-center;
     border-style: solid;
     width: 110px;
@@ -105,14 +115,22 @@
     margin-right: 46px;
 }
 .features{
-    color: #9b6510;
+    color: #163f51;
     font-size: 20px;
     font-family: cormorant;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+    /* background-color: blue; */
     width: -webkit-fill-available;
 }
-.feature1{
+.feature{
+    background-color: #eaf7fd;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+/* .feature1{
     border-style: solid;
     display: flex;
     flex-direction: column;
@@ -137,7 +155,7 @@
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 2%;
-}
+} */
 .getur-btn{
     padding-top: 4px;
     text-align: -webkit-center;

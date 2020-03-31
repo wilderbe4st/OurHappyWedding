@@ -44,7 +44,7 @@ nav {
     /* background-color: white; */
     
     width: 65px;
-    padding: 20px;
+    padding: 25px;
     display: none;
 }
 
@@ -57,7 +57,7 @@ nav {
     .nav-links{
         padding: 0px;
         
-        background:wheat;
+        background:white;
         position: fixed;
         flex-direction: column;
         align-items: center;

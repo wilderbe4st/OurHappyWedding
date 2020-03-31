@@ -23,21 +23,21 @@ function Home1(props){
                 </div>
                 <NavbarTop/>
             </div>
-            <div className='body-wrapper'>
+            <div className='body-wrapper container'>
                 <div className='sec-1' style={divStyle}>
                     <div className='img-text'>
-                    Make your wedding special with your own personalized wedding website
+                    Make your wedding special with your own personalized wedding website!
                     </div>
                     <div className='buttons'>
-                        <div className='demo-btn'>View Demo</div>
-                        <div className='getur-btn'>Get Yours!</div>
+                        <div className='btn-flat' id='homebutton'>View Demo</div>
+                        <div className='btn-flat' id='homebutton'>Get Yours!</div>
                     </div>
                 </div>
-                <div className='sec-2'>
+                <div className='sec-2 '>
                     <img src={require('../../resources/images/HomePage/leaf.png')} style={{marginTop:'3%',width:'60px'}}/>
                     <div style={{marginTop: '3%',marginBottom: '3%',color: '#607286',fontWeight:'450px',fontSize:'25px'}}>WHY OUR WEBSITE'S ARE THE BEST!</div>
                     <div className='features'>
-                        <div className='feature1'>
+                        <div className='feature'>
                        <div className='img-wrap'>
                            <img className='icon-img' src={require('../../resources/images/HomePage/letter.png')}/>
                        </div>
@@ -45,7 +45,7 @@ function Home1(props){
                            Send customized invitations
                        </div>
                         </div>
-                        <div className='feature2 '>
+                        <div className='feature '>
                         <div className='img-wrap'>
                         <img className='icon-img' src={require('../../resources/images/HomePage/doc.png')}/>
                        </div>
@@ -53,7 +53,7 @@ function Home1(props){
                            Put your wedding schedule online for guests
                        </div>
                         </div>
-                        <div className='feature3 '>
+                        <div className='feature '>
                         <div className='img-wrap'>
                         <img className='icon-img' src={require('../../resources/images/HomePage/album.png')}/>
                        </div>
@@ -65,7 +65,7 @@ function Home1(props){
                     </div>
                 </div>
                 <div className='sec-3' style={{marginTop: '300px'}}>
-hahaia
+
                 </div>
             </div> 
         </div>
